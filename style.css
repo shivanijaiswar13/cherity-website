@@ -553,56 +553,62 @@ body {
     border-radius: inherit;
 }
 .progress-value {
-    color: var(--pistachio);
-    font-size: var(--fs-7);
-    font-weight: var(--fw-600);
-  }
-  
-  .card-wrapper {
+    color: hsl(86, 45%, 54%);
+    font-size: 2rem;
+    font-weight: 600;
+}
+.card-wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     gap: 5px;
     margin-block: 15px;
-  }
-  
-  .donate-card .card-wrapper-text {
+}
+.donate-card .card-wrapper-text {
     display: flex;
     gap: 5px;
-  }
-  
-  .donate-card .card-wrapper-text span {
-    color: var(--sonic-silver);
-    font-weight: var(--fw-500);
-  }
-  
-  .card-wrapper-text data { font-weight: var(--fw-600); }
-  
-  .card-wrapper-text .green { color: var(--pistachio); }
-  
-  .card-wrapper-text .yellow { color: var(--bright-yellow-crayola); }
-  
-  .card-wrapper-text .cyan { color: var(--medium-turquoise); }
+}
+.donate-card .card-wrapper-text span {
+    color: hsl(0, 0%, 47%);
+    font-weight: 500;
+}
+.card-wrapper-text data { 
+    font-weight: 600; 
+}
+.card-wrapper-text .green { 
+    color: hsl(86, 45%, 54%); 
+}
+.card-wrapper-text .yellow {
+    color: hsl(40, 100%, 50%); 
+}
+.card-wrapper-text .cyan { 
+    color: hsl(172, 48%, 59%); 
+}
+.testi { 
+    background-color: hsl(0, 0%, 18%); 
+}
 
-  .testi { background-color: var(--jet); }
-
-  .testi-content { padding: var(--section-padding) 15px; }
-  
-  .testi .section-title {
-    color: var(--white);
+.testi-content { 
+    padding: 80px 15px; 
+}
+.testi .section-title {
+    color: hsl(0, 0%, 100%);
     margin-block: 10px 40px;
-  }
-  
-  .testi-card { color: var(--white); }
-  
-  .testi-text,
-  .testi-name { font-size: var(--fs-8); }
-  
-  .testi-text,
-  .testi-title { font-family: var(--ff-inter); }
-  
-  .testi-text {
+}
+.testi-card { 
+    color: hsl(0, 0%, 100%); 
+}
+.testi-text,
+.testi-name { 
+    font-size: 1.8rem; 
+}
+
+/* .testi-text,
+.testi-title { 
+    font-family: var(--ff-inter); 
+} */
+.testi-text {
     padding-block-end: 30px;
     border-block-end: 1px solid var(--white_10);
     margin-block: 20px 30px;
