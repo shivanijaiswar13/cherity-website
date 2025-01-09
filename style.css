@@ -181,7 +181,7 @@ body {
     transform: translateX(-50%);
     width: calc(100% - 140px);
     height: 1px;
-    background-color: hsl(0, 0%, 100%);
+    background-color: hsl(0, 0%, 100%, 0.1);
 }
 .header.active {
     background-color: hsl(0, 0%, 13%);
@@ -214,7 +214,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    outline: 1px solid hsl(0, 0%, 100%);
+    outline: 1px solid hsl(0, 0%, 100%, 0.1);
     display: flex;
     flex-direction: column;
     z-index: 1;
@@ -235,7 +235,7 @@ body {
     right: 15px;
 }
 .nav-close-btn i {
-    --ionicon-stroke-width: 60px; 
+    --i-stroke-width: 60px; 
 }
 .navbar > .logo {
     font-size: 4rem;
@@ -320,7 +320,7 @@ body {
     margin-block-start: 10px;
 } 
 .features-item .item-icon i { 
-    --ionicon-stroke-width: 25px; 
+    --i-stroke-width: 25px; 
 }
 
 .features-item .item-title { 
@@ -329,6 +329,109 @@ body {
 
 .features-item .item-text {
     max-width: 25ch;
-    color: var(0, 0%, 100%, 0.5);
+    color: hsl(0, 0%, 100%, 0.5);
     font-size: 1.5rem;
+}
+
+.about {
+    padding-block-start: 120px; 
+}
+
+.about-banner {
+    position: relative;
+    max-width: max-content;
+    margin-block-end: 30px;
+}
+
+.deco-title {
+    font-size: 13rem;
+    font-weight: 700;
+    white-space: nowrap;
+    line-height: 0.5;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px hsl(0, 0%, 80%);
+    transform-origin: top left;
+    transform: rotate(0.25turn);
+    position: absolute;
+    top: 55%;
+    left: 100%;
+    z-index: -1;
+}
+
+.deco-img {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    z-index: -1;
+}
+
+.about-img {
+    max-width: max-content;
+    margin-block-end: 30px;
+}
+
+.about .section-subtitle { 
+    margin-block-end: 10px; 
+}
+
+.tab-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-block: 25px 35px;
+}
+
+.tab-btn {
+    background-color: hsl(0, 0%, 91%);
+    color: hsl(0, 0%, 38%);
+    font-size: 1.8rem;
+    font-weight: 500;
+    padding: 10px 32px;
+}
+
+.tab-btn.active {
+    background-color: hsl(86, 45%, 54%);
+    color: hsl(0, 0%, 100%);
+}
+
+.tab-list { 
+    margin-block: 25px 50px; 
+}
+
+.tab-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-block: 5px;
+}
+
+.tab-item .item-icon {
+    font-size: 3rem;
+    color: hsl(86, 45%, 54%);
+}
+
+.tab-text {
+    color: hsl(0, 0%, 15%);
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+.cta-content {
+    background-color: hsl(86, 45%, 54%);
+    text-align: center;
+    padding: 50px 15px;
+    margin-block-end: 30px;
+}
+.cta .section-title {
+    color: hsl(0, 0%, 100%);
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-block-end: 25px;
+}
+.cta .btn-outline {
+    margin-inline: auto; 
+}
+.cta-banner { 
+    background-color: hsl(0, 0%, 80%); 
 }
