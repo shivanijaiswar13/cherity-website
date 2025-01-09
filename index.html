@@ -8,80 +8,104 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <header class="header">
+    <header class="header" data-header>
         <div class="container">
-            <h1>
-                <a href="#" class="logo">whildvine</a>
-            </h1>
-            <select name="language" class="lang-switch">
-                <option value="english">english</option>
-                <option value="french">french</option>
-                <option value="spanish">spanish</option>
-            </select>
-
-            <button class="nav-open-btn" >
-                <i class="fa-solid fa-bars"></i>
+    
+          <h1>
+            <a href="#" class="logo">Wildvine</a>
+          </h1>
+    
+          <select name="language" class="lang-switch">
+    
+            <option value="english">English</option>
+            <option value="french">French</option>
+            <option value="spanish">Spanish</option>
+    
+          </select>
+    
+          <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
+            <ion-icon name="menu-outline"></ion-icon>
+          </button>
+    
+          <nav class="navbar" data-navbar>
+    
+            <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
             </button>
-            <nav class="navbar">
-                <button class="nav-close-btn">
-                    <i class="fa-solid fa-xmark"></i>
-                </button>
-                <a href="#" class="logo">wildvine</a>
-                <ul class="navbar-list">
-                    <li>
-                        <a href="#home" class="navbar-link">
-                            <span>home</span>
-                            <i class="fa-solid fa-forward"></i>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#about" class="navbar-link">
-                            <span>about</span>
-                            <i class="fa-solid fa-forward"></i>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#service" class="navbar-link">
-                            <span>service</span>
-                            <i class="fa-solid fa-forward"></i>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#donate" class="navbar-link">
-                            <span>donate</span>
-                            <i class="fa-solid fa-forward"></i>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#event" class="navbar-link">
-                            <span>event</span>
-                            <i class="fa-solid fa-forward"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#contact" class="navbar-link">
-                            <span>contact</span>
-                            <i class="fa-solid fa-forward"></i>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="header-action">
-                <button class="search-btn">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </button>
-
-                <button class="btn">
-                    <span>donation</span>
-                    <i class="fa-solid fa-heart"></i>
-                </button>
-            </div>
+    
+            <a href="#" class="logo">Wildvine</a>
+    
+            <ul class="navbar-list">
+    
+              <li>
+                <a href="#home" class="navbar-link" data-nav-link>
+                  <span>Home</span>
+    
+                  <i class="fa-solid fa-forward" aria-hidden="true"></i>
+                </a>
+              </li>
+    
+              <li>
+                <a href="#about" class="navbar-link" data-nav-link>
+                  <span>About</span>
+    
+                  <i class="fa-solid fa-forward" aria-hidden="true"></i>
+                </a>
+              </li>
+    
+              <li>
+                <a href="#service" class="navbar-link" data-nav-link>
+                  <span>Service</span>
+    
+                  <i class="fa-solid fa-forward" aria-hidden="true"></i>
+                </a>
+              </li>
+    
+              <li>
+                <a href="#donate" class="navbar-link" data-nav-link>
+                  <span>Donate</span>
+    
+                  <i class="fa-solid fa-forward" aria-hidden="true"></i>
+                </a>
+              </li>
+    
+              <li>
+                <a href="#event" class="navbar-link" data-nav-link>
+                  <span>Event</span>
+    
+                  <i class="fa-solid fa-forward" aria-hidden="true"></i>
+                </a>
+              </li>
+    
+              <li>
+                <a href="#" class="navbar-link" data-nav-link>
+                  <span>Contact</span>
+    
+                  <i class="fa-solid fa-forward" aria-hidden="true"></i>
+                </a>
+              </li>
+    
+            </ul>
+    
+          </nav>
+    
+          <div class="header-action">
+    
+            <button class="search-btn" aria-label="Search">
+              <ion-icon name="search-outline"></ion-icon>
+            </button>
+    
+            <button class="btn btn-primary">
+              <span>Donation</span>
+    
+              <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+            </button>
+    
+          </div>
+    
         </div>
-    </header>
+      </header>
+    
 
 
     <main>
@@ -170,10 +194,10 @@
                 <div class="container">
                     <div class="about-banner">
                         <h2 class="deco-title">about us</h2>
-                        <img src="images/image1.jpg" alt="" width="58" height="261" class="deco-img">
+                        <img src="images/image1.jpg" alt="" width="58px" height="261px" class="deco-img">
                         <div class="banner-row">
                             <div class="banner-col">
-                                <img src="images/tiger.jpg" alt="tiger" width="315" height="380" loading="lazy" class="about-img about-img-2 w-100">
+                                <img src="images/tiger.jpg" alt="tiger" width="315px" height="380px" loading="lazy" class="about-img about-img-2 w-100">
 
                                 <img src="images/panda.avif" alt="panda" width="386" height="250" loading="lazy" class="about-img about-img-2 w-100">
 
@@ -621,12 +645,207 @@
     </section>
 
         <!-- testimonial -->
+        <section class="testi">
+
+            <div class="testi-content">
+    
+              <p class="section-subtitle">
+                <img src="./assets/images/subtitle-img-green.png" width="32" height="7" alt="Wavy line">
+    
+                <span>Our Testimonials</span>
+              </p>
+    
+              <h2 class="h2 section-title">
+                What People Say About <strong>Our Organization</strong>
+              </h2>
+    
+              <div class="testi-card">
+    
+                <figure class="card-avatar">
+                  <img src="./assets/images/testi-avatar.png" width="60" height="60" loading="lazy" alt="David S. Neuman">
+                </figure>
+    
+                <div>
+                  <blockquote class="testi-text">
+                    Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium doloremque laudantium totam rem
+                    aperiam eaquesa
+                    quae abillo inventore veritatis quasi architecto beatae vitae dicta sunt explicabo enimpsam voluptatem
+                  </blockquote>
+    
+                  <h3 class="testi-name">David S. Neuman</h3>
+    
+                  <p class="testi-title">Business Manager</p>
+                </div>
+    
+              </div>
+    
+            </div>
+    
+            <figure class="testi-banner">
+              <img src="./assets/images/testi-banner.jpg" width="960" height="846" loading="lazy" alt="Rhinoceros"
+                class="img-cover">
+            </figure>
+    
+          </section>
 
 
-
-
-        </article>
+        <!-- events -->
+        <section class="section event" id="event">
+            <div class="container">
+    
+              <p class="section-subtitle">
+                <img src="./assets/images/subtitle-img-green.png" width="32" height="7" alt="Wavy line">
+    
+                <span>Event & Program</span>
+    
+                <img src="./assets/images/subtitle-img-green.png" width="32" height="7" alt="Wavy line">
+              </p>
+    
+              <h2 class="h2 section-title">
+                Our Most Popular Causes For <strong>Building Fund</strong>
+              </h2>
+    
+              <ul class="event-list">
+    
+                <li>
+                  <div class="event-card">
+    
+                    <time class="card-time" datetime="01-05">
+                      <span class="month">Jan</span>
+    
+                      <span class="date">05</span>
+                    </time>
+    
+                    <div class="wrapper">
+    
+                      <div class="card-content">
+                        <p class="card-subtitle">Ocean Water</p>
+    
+                        <h3 class="card-title">Far from the countries Vokalia and Consonantia 2022</h3>
+    
+                        <p class="card-text">
+                          Sit amet consectetur adipiscing elit sed do eiusmod tempor
+                        </p>
+                      </div>
+    
+                      <button class="btn btn-white">
+                        <span>View Events</span>
+    
+                        <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                      </button>
+    
+                    </div>
+    
+                  </div>
+                </li>
+    
+                <li>
+                  <div class="event-card">
+    
+                    <time class="card-time" datetime="02-23">
+                      <span class="month">Feb</span>
+    
+                      <span class="date">23</span>
+                    </time>
+    
+                    <div class="wrapper">
+    
+                      <div class="card-content">
+                        <p class="card-subtitle">Ocean Water</p>
+    
+                        <h3 class="card-title">Far from the countries Vokalia and Consonantia 2022</h3>
+    
+                        <p class="card-text">
+                          Sit amet consectetur adipiscing elit sed do eiusmod tempor
+                        </p>
+                      </div>
+    
+                      <button class="btn btn-white">
+                        <span>View Events</span>
+    
+                        <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                      </button>
+    
+                    </div>
+    
+                  </div>
+                </li>
+    
+                <li>
+                  <div class="event-card">
+    
+                    <time class="card-time" datetime="03-27">
+                      <span class="month">Mar</span>
+    
+                      <span class="date">27</span>
+                    </time>
+    
+                    <div class="wrapper">
+    
+                      <div class="card-content">
+                        <p class="card-subtitle">Ocean Water</p>
+    
+                        <h3 class="card-title">Far from the countries Vokalia and Consonantia 2022</h3>
+    
+                        <p class="card-text">
+                          Sit amet consectetur adipiscing elit sed do eiusmod tempor
+                        </p>
+                      </div>
+    
+                      <button class="btn btn-white">
+                        <span>View Events</span>
+    
+                        <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                      </button>
+    
+                    </div>
+    
+                  </div>
+                </li>
+    
+              </ul>
+    
+              <button class="btn btn-secondary">
+                <span>Learn More Us</span>
+    
+                <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+              </button>
+    
+            </div>
+          </section>
+    
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+    
+          <ul class="footer-list">
+    
+            <li>
+              <a href="#" class="footer-link">Terms of use</a>
+            </li>
+    
+            <li>
+              <a href="#" class="footer-link">Privacy & Policy</a>
+            </li>
+    
+          </ul>
+    
+          <p class="copyright">
+            Copyright 2022 <a href="#" class="copyright-link">codewithsadee</a>. All Rights Reserved.
+          </p>
+    
+        </div>
+      </footer>
+    </article>
     </main>
+    <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
     
 </body>
 </html>
